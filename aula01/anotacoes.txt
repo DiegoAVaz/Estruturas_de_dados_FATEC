@@ -1,0 +1,21 @@
+PARADIGMAS DE DESENVOLVIMENTO DE SOFTWARE
+
+    ESTRUTURADO
+
+    - Dados de um lado, ação (comportamento) de outro lado;
+    - Linguagens estruturadas;
+    - Modelagem: análise estruturada
+
+    ORIENTAÇÃO A OBJETOS
+
+    - Dados e ações juntos num objeto cujo modelo é definido numa Classe;
+    - Linguagens orientadas a objetos;
+    - Modelagem: UML (Unified Modeling Language).
+
+-------------------------------------------------------------------------------
+
+CLASSES x OBJETOS
+
+    CLASSES = Modelos
+    OBJETOS = Instâncias concretas construídas a partir do modelo 
+    
