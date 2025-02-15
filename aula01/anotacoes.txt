@@ -18,4 +18,27 @@ CLASSES x OBJETOS
 
     CLASSES = Modelos
     OBJETOS = Instâncias concretas construídas a partir do modelo 
+
+-------------------------------------------------------------------------------
+
+NÍVEIS DE ACESSO DE CLASSE
+
+    Quem tem acesso?
+
+    private: classe;
+    padrão (nada): classe e pacote;
+    protected: classe, pacote e herança;
+    public: classe, pacote, herança e mundo.
+    
+
+-------------------------------------------------------------------------------
+
+PRINCÍPIOS DE DESENVOLVIMENTO DE SOFTWARE
+
+    1- Alta coesão, baixo acoplamento;
+
+    2- Aberto, fechado;
+        - Aberto para crescer
+        - Fechado para modificar
+
     
