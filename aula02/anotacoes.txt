@@ -1,0 +1,59 @@
+Assinatura de um método:
+    modificadores de acesso e de escopo | tipo | nome(canj de parâmetros)
+            public               static   void   main(   String[] args  )
+
+----------------------------------------------------------------------------------------------------------------
+
+Pilares da Orientação a Objetos
+    1. Encapsulamento;
+    2. Herança;
+    3. Polimorfismo.
+        Comportamentos de diversas formas
+        Em Java:
+            Sobrecarga = Conjuntos diferentes de parâmetros (em número e/ou tipo)
+            Sobrescrita = (Override) permite que uma classe reescreva um método da sua classe mãe,
+                          com suas particularidades. Obs: Não se modifica a assinatura do método
+                          que será sobrescrito.
+                          A anotação @Override serve para avisar os desenvolvedores e o compilador
+                          que a assinatura deve ser modificada.
+            Generics =
+
+----------------------------------------------------------------------------------------------------------------
+
+Vamos chegar na Herança
+
+    Uma classe define um conjunto de atributos e todos os comportamentos que esses atributos podem realizar.
+    Uma classe pode se relacionar com outras por associações* ou por herança.
+
+    A herança permite colocar elementos comuns numa classe "mãe" e as particularidades em classes "filhas".
+
+
+                             ______________
+                            | Pessoa       |
+                            |______________|
+                            | - nome       |
+                            | - cpf        |    ** Fazer demais classes que herdam esses atributos 
+                            |______________|
+
+    Sintaxe:
+        [modificador de acesso] class NomeDaSuperclasse {
+            Corpo
+        }
+
+        [modificador de acesso] class NomeDaClasseFilha extends NomeDaSuperclasse {
+            Corpo
+        }
+
+
+    Classe Object
+        A classe Object é a mãe de todas no Java. Entre os métodos e construtores ela
+        fornece o construtor padrão, que "zera" todos os atributor de uma classe.
+
+
+    *Temos vários tipos de associações 
+
+----------------------------------------------------------------------------------------------------------------
+
+
+
+doc java https://docs.oracle.com/java/8/docs/
