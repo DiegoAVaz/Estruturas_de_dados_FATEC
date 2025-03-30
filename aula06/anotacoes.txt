@@ -1,0 +1,57 @@
+RECURSÃO
+
+Caracteriza-se pela chamada de uma rotina por ela mesma 
+Por substituir um laço
+
+Para não cair em chamadas infinitas, toda recursão precisa de uma condição de parada.
+
+Exemplo: cálculo do fatorial:
+
+    n! = {1 , se n = 0, ou n = 1
+        n . (n - 1), se n > 1
+
+Utilizando laços:
+
+    for (int i = 1, f = 1; i <= n; i++)
+            f *= i;
+
+Recursivamente:
+
+    int fatorial (int n){
+        if(n < 2) return 1;
+        return n * fatorial (n - 1);
+    }
+
+Fibonacci
+
+    fibonacci(n) = {1, se n = 1, n = 2
+                    fib(n - 1) + fib(n - 2)
+
+    int fib(int n){
+        if(n < 3) return 1;
+        return fib(n - 1) + fib(n - 2)
+    }
+
+Programação Dinâmica:
+
+    Utiliza uma estrutura de dados para armazenar valores anteriores já calculados
+
+
+    1) Para o fatorial:
+
+        v[0] = 1;
+        v[1] = 1;
+
+        for(i = 2; i < n; i++){
+            v[i] = i * v[i - 1];
+        }
+    
+    2) Para o Fibonacci:
+
+        v[0] = 1;
+        v[1] = 1;
+
+        for(i = 2; i < n; i++){
+            v[i] = v[i - 1] + v[i - 2];
+        }
+

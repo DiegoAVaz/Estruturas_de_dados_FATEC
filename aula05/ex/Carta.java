@@ -31,6 +31,7 @@ public class Carta {
     @Override
     public boolean equals(Object o){
         if(this == o) return true;
+        if(o == null || getClass() != o.getClass()) return false;
         Carta c = (Carta) o;
         if (c.naipe.equals(this.naipe) && c.valor.equals(this.valor)) return true;
         return false;
